@@ -5,3 +5,9 @@ React Children also create a problem of unneccassary prop drilling..... react do
 
 The next video looks into the Context() API. 
  - https://react.dev/reference/react/Children#alternatives
+
+
+### useContext 
+- https://react.dev/reference/react/useContext
+
+This is kinda cool, you can manage simple state like theme and menu and bunch of things here. once you define in the parent, you can import from ny child component or or granchild. it does not have to be a direct child. 
