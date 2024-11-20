@@ -1,7 +1,7 @@
 import React from "react";
 
 // eslint-disable-next-line react/prop-types
-export default function Decision({ render }) {
+export default function Decision({ children }) {
   const [goingOut, setGoingOut] = React.useState(false);
 
   function toggleGoingOut() {
@@ -11,7 +11,7 @@ export default function Decision({ render }) {
   return (
     <div>
       <button onClick={toggleGoingOut}>Change mind</button>
-      {render(goingOut)}
+      {children(goingOut)}
     </div>
   );
 }
