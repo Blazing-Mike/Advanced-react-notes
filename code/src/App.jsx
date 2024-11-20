@@ -1,4 +1,5 @@
 import { BsStar, BsStarFill } from "react-icons/bs";
+import Decision from "./Decision";
 import Toggle from "./Toggle/index";
 
 function App() {
@@ -14,6 +15,16 @@ function App() {
           </Toggle.Off>
         </Toggle.Button>
       </Toggle>
+      <br />
+      <br />
+
+      <Decision
+        render={(goingOut) => {
+          return (
+            <h1>Am I going out tonight?? {goingOut ? "Yes!" : "Nope..."}</h1>
+          );
+        }}
+      />
     </>
   );
 }
